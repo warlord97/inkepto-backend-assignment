@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "481962b8-4129-4f98-ae21-8497702bc6c7",
+		"name": "inkepto-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29267378"
+	},
+	"item": [
+		{
+			"name": "register-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"email\": \"vedant@email.com\",\r\n \"password\": \"vedant@12345\",\r\n \"firstName\": \"Vedant\",\r\n \"lastName\": \"Singh\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://inkepto-backend-assignment.onrender.com/api/register",
+					"protocol": "https",
+					"host": [
+						"inkepto-backend-assignment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"email\": \"shubham@email.com\",\r\n \"password\": \"shubham@12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://inkepto-backend-assignment.onrender.com/api/login",
+					"protocol": "https",
+					"host": [
+						"inkepto-backend-assignment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzI4NzYwMTAzMDAyYWYxZDczOTZiOSIsImVtYWlsIjoic2h1YmhhbUBlbWFpbC5jb20iLCJpYXQiOjE3NjQ5MTk5MzMsImV4cCI6MTc2NDkyMzUzM30.Ul1PR20XQ0WN03NsFFJv5-HHBVt5nnbXj9ye1HuZnp8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://inkepto-backend-assignment.onrender.com/api/user",
+					"protocol": "https",
+					"host": [
+						"inkepto-backend-assignment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
