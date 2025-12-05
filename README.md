@@ -52,8 +52,8 @@ project/
 ### 1. Clone the Repository
 
 ```
-git clone https://github.com/your-username/mini-backend-assignment.git
-cd mini-backend-assignment
+git clone https://github.com/warlord97/inkepto-backend-assignment.git
+cd inkepto-backend-assignment
 ```
 
 ### 2. Install Dependencies
@@ -68,6 +68,7 @@ npm install
 MONGO_URI=your_mongodb_atlas_url
 JWT_SECRET=your_secret_key
 PORT=5000
+JWT_EXPIRES_IN=1h
 ```
 
 ### 4. Start the Server
@@ -79,7 +80,7 @@ node server.js
 Server will run on:
 
 ```
-http://localhost:5000
+https://inkepto-backend-assignment.onrender.com
 ```
 
 ---
@@ -159,7 +160,7 @@ Response:
 Swagger UI available at:
 
 ```
-https://your-deployed-url/api-docs
+https://inkepto-backend-assignment.onrender.com/api-docs
 ```
 
 Swagger file location:
@@ -185,6 +186,7 @@ Add environment variables in deployment platform:
 MONGO_URI
 JWT_SECRET
 PORT
+JWT_EXPIRES_IN
 ```
 
 ---
