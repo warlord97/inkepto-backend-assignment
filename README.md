@@ -189,13 +189,12 @@ PORT
 
 ---
 
-## 📦 Postman Collection
+---
 
-Exported Postman collection will be added here:
+## 🧪 Postman Collection
+Your can find the complete Postman API collection here:
 
-```
-postman_collection.json
-```
+[Download Postman Collection](./postman_collection.json)
 
 ---
 
